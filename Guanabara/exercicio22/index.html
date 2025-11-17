@@ -3,85 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teste imagens</title>
+    <title>Alinhamento vertical</title>
     <style>
-      body {
-        height: 100vh;
-        background-color: black;
-        background-image: url(imagens/wallpaper002.jpg);
-        background-position: center center;
-        background-repeat: repeat-y;
-        background-size: cover;
-        background-attachment: fixed;
+      #container {
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        height: 95vh;
+        background-color: purple;
+        padding: 10px;
+        position: relative;
       }
 
-      main {
-        background-color: white;
-        max-width: 400px;
-        padding: 10px;
-        margin: auto;
-        border: 1px solid darkblue;
-        border-radius: 15px;
+      #conteudo {
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        height: 200px;
+        background-color: yellow;
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>Teste de Imagem de fundo</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint
-        temporibus amet soluta eius obcaecati totam numquam praesentium a
-        provident sequi eos quas facere dolore, accusantium deserunt facilis,
-        necessitatibus cupiditate?
-      </p>
-    </main>
+    <section id="container">
+      <article id="conteudo"></article>
+    </section>
   </body>
 </html>
