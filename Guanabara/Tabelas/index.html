@@ -3,73 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabelas em HTML</title>
+    <title>Desafio Tabelas em HTML</title>
 
     <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .tabela {
-        text-align: ;
-      }
-
-      .tabela h1 {
-        text-align: center;
-      }
-
       table {
-        width: 500px;
-        height: 500px;
+        text-align: center;
+        width: 300px;
         border-collapse: collapse;
-        margin: auto;
+        margin: 20px;
       }
 
       td {
         border: 1px solid black;
-        padding: 10px;
-        text-align: center;
-        vertical-align: middle;
+        padding: 5px;
       }
 
-      .destaque {
-        background-color: rgba(128, 128, 128, 0.753);
+      .head {
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <div class="tabela">
-      <h1>Minha Primeira Tabela</h1>
-      <!--Hierarquia de tabelas
-            table = tabela
-            table rom = linha de tabela
-            table header = cabeçalho de tabela
-            table data = dado de tabela-->
+    <div>
       <table>
-        <tr class="destaque">
-          <!--primeira linha-->
-          <td>A1</td>
-          <td>B1</td>
-          <td>C1</td>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td rowspan="2">3</td>
+          <td>4</td>
         </tr>
         <tr>
-          <!--segundalinha-->
-          <td>A2</td>
-          <td>B2</td>
-          <td>C2</td>
-        </tr>
-        <tr class="destaque">
-          <!--terceira linha-->
-          <td>A3</td>
-          <td>B3</td>
-          <td>C3</td>
-        </tr>
+          <td>5</td>
+          <td>6</td>
 
+          <td>7</td>
+        </tr>
         <tr>
-          <!--segundalinha-->
-          <td>A4</td>
-          <td>B4</td>
-          <td>C4</td>
+          <td colspan="3">8</td>
+
+          <td>12</td>
+        </tr>
+        <tr>
+          <td rowspan="2">10</td>
+          <td colspan="2">11</td>
+
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td colspan="4">A</td>
+
+          <td rowspan="4">B</td>
+        </tr>
+        <tr>
+          <td rowspan="4">C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>J</td>
+          <td>L</td>
+          <td>M</td>
+        </tr>
+        <tr>
+          <td colspan="4">N</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td class="head">Grupos</td>
+          <td class="head">Nomes</td>
+          <td colspan="3" class="head">Filmes</td>
+        </tr>
+        <tr>
+          <td
+            rowspan="3
+          "
+            class="head"
+          >
+            Mulheres
+          </td>
+          <td>Ana Maria</td>
+          <td>Alien</td>
+          <td>Rambo</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Beatriz</td>
+          <td>Hulk</td>
+          <td>Inception</td>
+          <td>Batman</td>
+        </tr>
+        <tr>
+          <td>Claudia</td>
+          <td>Oblivion</td>
+          <td>Matrix</td>
+          <td>Big Hero</td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="head">Homens</td>
+          <td>Bruno</td>
+          <td>Intocaveis</td>
+          <td>Amnesia</td>
+          <td>Gladiador</td>
+        </tr>
+        <tr>
+          <td>Daniel</td>
+          <td>Wall</td>
+          <td>oldboy</td>
+          <td>Dangal</td>
+        </tr>
+        <tr>
+          <td>Fabiano</td>
+          <td>Star wars</td>
+          <td>Taxi drive</td>
+          <td>Toy story</td>
         </tr>
       </table>
     </div>
