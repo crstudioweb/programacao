@@ -4,19 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
       iframe {
-        border: 1px solid black;
+        border: 2px solid black;
       }
     </style>
     <title>Estudos de iframes</title>
   </head>
   <body>
-    <h1>Testando o uso de iframes</h1>
+    <h1>Faça uma escolha</h1>
+
+    <ul>
+      <li><a href="pagina2.html" target="frame">Página 2</a></li>
+      <li><a href="pagina3.html" target="frame">Página 3</a></li>
+    </ul>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis fuga
+      aut voluptate possimus itaque optio architecto odit enim perferendis vel
+      molestiae dolorum in ratione, magni numquam ipsa, vero obcaecati ut.
+    </p>
     <p>
       Acessando o site do
-      <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+      <iframe name="frame" frameborder="0"></iframe>
 
       para aprender a programar
     </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid iure sed
+      eos voluptatum tenetur vitae, reprehenderit maxime ratione sint odit
+      incidunt veritatis adipisci voluptas inventore commodi quo quaerat
+      explicabo voluptate?
+    </p>
+    <form action="cadastro.php" method="get">
+      <p>
+        <h1>Cadastra-se aqui</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" />
+        <input type="submit" value="cadastrar" />
+      </p>
+    </form>
   </body>
 </html>
