@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários parte 2</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imasc" /><label for="imasc"
+          >Masculino</label
+        >
+        <input type="radio" name="sexo" id="ifem" /><label for="ifem"
+          >Feminino</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="basket" id="ibasket" /><label for="ibasket"
+          >Basket</label
+        >
+        <input type="checkbox" name="futebol" id="ifutebol" /><label
+          for="ifutebol"
+          >Futebol</label
+        >
+        <input type="checkbox" name="natacao" id="inatacao" /><label
+          for="inatacao"
+          >Natação</label
+        >
+        <input type="checkbox" name="volei" id="ivolei" /><label for="ivolei"
+          >Vôlei</label
+        >
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+
+    <h1>Novo Formulário</h1>
+
+    <form action="cadastro.php">
+      <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor" />
+      </p>
+      <p>
+        <label for="inivel"></label>Nível de satisfação:
+        <input type="range" name="nivel" id="inivel" />
+      </p>
+
+      <p>
+        <label for="ifoto">Foto do perfil</label>
+        <input type="file" name="foto" id="ifoto" />
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar Mensagem" />
+        <input type="reset" value="Limpar Tudo" />
+      </p>
+    </form>
+  </body>
+</html>
