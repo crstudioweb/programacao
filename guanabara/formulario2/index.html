@@ -6,7 +6,7 @@
     <title>Formulários parte 2</title>
   </head>
   <body>
-    <h1>Exemplo de Formulário</h1>
+    <h1>Formulário - Sexo e Esportes</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
       <fieldset>
         <legend>Sexo</legend>
@@ -41,9 +41,9 @@
       </p>
     </form>
 
-    <h1>Novo Formulário</h1>
+    <h1>Formulário - Cor, Nível e Foto</h1>
 
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post">
       <p>
         <label for="icor">Cor:</label>
         <input type="color" name="cor" id="icor" />
@@ -61,6 +61,83 @@
       <p>
         <input type="submit" value="Enviar Mensagem" />
         <input type="reset" value="Limpar Tudo" />
+      </p>
+    </form>
+
+    <form action="cadastro.php" method="post">
+      <h1>Formulário -</h1>
+      <p>
+        <label for="iest">Estado:</label>
+        <select name="est" id="iest">
+          <optgroup label="Região Sudeste">
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+          </optgroup>
+
+          <optgroup label="Região Nordeste">
+            <option value="CE">Ceará</option>
+            <option value="BA">Bahia</option>
+            <option value="PE">Pernambuco</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof" />
+        <datalist id="lstprof">
+          <option value="ADM">Administrador</option>
+          <option value="CON">Contador</option>
+          <option value="DEV">Programador</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="imsn">Mensagem:</label>
+        <textarea
+          name="msn"
+          id="imsn"
+          placeholder="Digite sua mensagem"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <h1>Formulário - Números</h1>
+
+      <p>
+        <label for="in1">Número 1:</label>
+        <input
+          type="number"
+          name="n1"
+          id="in1"
+          min="0"
+          max="10"
+          required
+          oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"
+        />
+      </p>
+      <p>
+        <label for="in2">Número 2:</label>
+        <input
+          type="number"
+          name="n2"
+          id="in2"
+          min="0"
+          max="10"
+          required
+          oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"
+        />
+      </p>
+      <p>
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
       </p>
     </form>
   </body>
