@@ -35,19 +35,26 @@ body {
 
 header {
   background-color: var(--color-4);
+  height: 100px;
 }
 
 header > h1 {
   font-family: var(--fonte-destaque);
   color: white;
+  text-align: center;
+  padding-top: 15px;
 }
 
 header > p {
   color: white;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 15px;
 }
 
 nav {
   background-color: var(--color-5);
+  text-align: center;
 }
 nav a {
   color: white;
@@ -55,13 +62,17 @@ nav a {
   padding: 15px;
   display: inline-block;
 }
+nav a:hover {
+  background-color: var(--color-6);
+  text-decoration: underline;
+}
 
 main {
   background-color: white;
   min-width: 800px;
   max-width: 1000px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding: 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -70,12 +81,47 @@ main {
 main h1 {
   color: var(--color-5);
   font-family: var(--fonte-android);
+  text-align: center;
+  margin-bottom: 15px;
 }
 main h2 {
   font-family: var(--fonte-android);
+  text-align: center;
+  margin: 15px 0;
+}
+
+main h3 {
+  margin: 15px 0;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+main ul li {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 footer {
   background-color: var(--color-6);
+  color: white;
+  font-family: var(--fonte-android);
+}
+
+footer p {
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: #000;
+}
+footer a:hover {
+  text-decoration: none;
   color: white;
 }
