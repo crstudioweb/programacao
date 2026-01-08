@@ -96,3 +96,12 @@ footer {
   color: #fff;
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .imagem {
+    background-attachment: scroll !important; /* Desativa o fixo que trava */
+    /* Ou use position: sticky se a estrutura permitir */
+    background-size: cover;
+    background-position: center;
+  }
+}
