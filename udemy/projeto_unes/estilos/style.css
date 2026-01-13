@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #000;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+#logo > a > img {
+  width: 250px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav ul a:hover {
+  color: #c404ea;
+  text-decoration: underline;
+}
+#apresentacao {
+  text-align: center;
+  margin: 50px 0;
+}
+#apresentacao h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#apresentacao p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#apresentacao > img {
+  width: 700px;
+  height: auto;
+  margin: 20px 0;
+}
+
+#informacoes h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+#informacoes p {
+  font-size: 18px;
+  margin: 20px;
+  text-align: justify;
+}
