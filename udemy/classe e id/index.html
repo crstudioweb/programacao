@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com classes, ids, div e span</title>
+
+    <style>
+      .css {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        padding: 10px;
+        overflow-x: auto;
+      }
+      #conclusao {
+        color: rgb(0, 63, 0);
+      }
+      #bordas {
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid black;
+      }
+      #fontes-e-cores {
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid black;
+      }
+      #fontes-e-cores h2 {
+        color: navy;
+      }
+      #fontes-e-cores p {
+        color: rgb(28, 28, 110);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com classes e ids</h1>
+    <p>Este é um exemplo de como trabalhar com classes e ids em HTML.</p>
+    <p>
+      As classes e ids são atributos que podem ser adicionados a qualquer
+      elemento HTML para aplicar estilos CSS ou manipulação JavaScript.
+    </p>
+    <p>
+      Por exemplo, você pode usar um id para identificar um elemento específico
+      e uma classe para aplicar estilos a um grupo de elementos.
+    </p>
+    <h2>Exemplo de uso</h2>
+    <p>Aqui está um exemplo de como usar classes e ids em HTML:</p>
+    <pre class="css">
+      &lt;div id="meu-id"&gt;
+        &lt;p class="minha-classe"&gt;Este é um parágrafo com uma classe.&lt;/p&gt;
+      &lt;/div&gt;
+    </pre>
+    <p>
+      Neste exemplo, temos um elemento &lt;div&gt; com um id "meu-id" e um
+      parágrafo dentro dele com a classe "minha-classe".
+    </p>
+    <p>Você pode usar CSS para estilizar esses elementos da seguinte forma:</p>
+    <pre class="css">
+      #meu-id {
+        background-color: lightblue;
+      }
+
+      .minha-classe {
+        font-weight: bold;
+      }
+    </pre>
+    <h2 id="conclusao">Conclusão</h2>
+    <p>
+      Neste exemplo, aprendemos como usar classes e ids em HTML para estilizar
+      elementos com CSS. As classes permitem aplicar estilos a vários elementos,
+      enquanto os ids são usados para identificar elementos específicos.
+    </p>
+
+    <h2>Divs e Spans</h2>
+    <div>
+      <p>
+        As <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> são elementos de
+        bloco e em linha, respectivamente. O elemento <code>&lt;div&gt;</code> é
+        usado para agrupar outros elementos e aplicar estilos a um bloco de
+        conteúdo, enquanto o elemento <code>&lt;span&gt;</code> é usado para
+        estilizar partes de um texto dentro de um bloco.
+      </p>
+    </div>
+    <div>
+      <p>
+        Em resumo, use <code>&lt;div&gt;</code> para agrupar elementos e aplicar
+        estilos a blocos de conteúdo, e use <code>&lt;span&gt;</code>
+        para estilizar partes específicas de um texto.
+      </p>
+    </div>
+    <h2>Referências</h2>
+    <p>
+      MDN Web Docs - <code>&lt;div&gt;</code>:
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div"
+        >https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div</a
+      >
+    </p>
+    <p>
+      MDN Web Docs - <code>&lt;span&gt;</code>:
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/span"
+        >https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/span</a
+      >
+    </p>
+    <div id="bordas">
+      <h2>Bordas</h2>
+      <p>
+        As bordas podem ser estilizadas usando a propriedade CSS
+        <code>border</code>. Você pode definir a largura, o estilo e a cor da
+        borda. Aqui está um exemplo:
+      </p>
+      <pre class="css">
+        #meu-id {
+          border: 2px solid red;
+        }
+        .minha-classe {
+          border: 1px dashed blue;
+        }
+      </pre>
+    </div>
+
+    <div id="fontes-e-cores">
+      <h2>Fontes e Cores</h2>
+      <p>
+        As fontes e cores podem ser estilizadas usando as propriedades CSS
+        <code>font-family</code>, <code>font-size</code> e <code>color</code>.
+        Aqui está um exemplo:
+      </p>
+      <pre class="css">
+        #meu-id {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          color: #333;
+        }
+        .minha-classe {
+          font-family: 'Courier New', monospace;
+          font-size: 14px;
+          color: #666;
+        }
+      </pre>
+    </div>
+  </body>
+</html>
