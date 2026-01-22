@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.texto {
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+
+#negrito {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.cores {
+  background-color: aqua;
+}
