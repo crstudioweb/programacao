@@ -1,0 +1,87 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
+  color: #333;
+  line-height: 1.6;
+}
+/*Layout*/
+#cabecalho {
+  background-color: #f7b600;
+  padding: 15px;
+  text-align: center;
+}
+#logo,
+#menu {
+  padding: 15px;
+}
+#principal {
+  width: 920px;
+  margin: auto;
+}
+.postagem {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+#ler-mais {
+  color: #000;
+  text-decoration: underline;
+}
+#ler-mais:hover {
+  color: #f7b600;
+  background-color: transparent;
+}
+#postagens,
+#menu-lateral {
+  background-color: rgb(238, 155, 0);
+}
+
+#postagens {
+  width: 660px;
+  float: left;
+}
+
+#menu-lateral {
+  width: 200px;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  padding: 8px 15px;
+}
+
+a:hover {
+  color: #f7b600;
+  background-color: #fff;
+}
+
+h1 {
+  color: #4e4e4e;
+  font-size: 2.5em;
+}
+#blog {
+  color: #fff;
+}
+#resumo-post {
+  clear: both;
+}
+
+#rodape {
+  clear: both;
+  text-align: center;
+  padding: 15px;
+  background: #ccc;
+}
