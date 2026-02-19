@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mais Seletores</title>
+  </head>
+  <body>
+    <header>
+      <h1>Seletores</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Seletores de Atributo</h2>
+        <p>
+          Os seletores de atributo permitem selecionar elementos com base em
+          seus atributos e valores. Por exemplo:
+        </p>
+        <pre><code>/* Seleciona todos os links que começam com "https" */
+a[href^="https"] {
+    color: green;
+}</code></pre>
+        <p>
+          Este código seleciona todos os links que começam com "https" e os
+          estiliza com a cor verde.
+        </p>
+      </section>
+      <section>
+        <h2>Seletores de Pseudo-Classe</h2>
+        <p>
+          Os seletores de pseudo-classe permitem selecionar elementos com base
+          em seu estado ou posição. Por exemplo:
+        </p>
+        <pre><code>/* Seleciona o primeiro parágrafo de cada seção */
+section p:first-child {
+    font-weight: bold;
+}</code></pre>
+        <p>
+          Este código seleciona o primeiro parágrafo de cada seção e o estiliza
+          com negrito.
+        </p>
+      </section>
+      <section>
+        <h2>Seletores de Pseudo-Elemento</h2>
+        <p>
+          Os seletores de pseudo-elemento permitem selecionar e estilizar partes
+          específicas de um elemento. Por exemplo:
+        </p>
+        <pre><code>/* Adiciona um conteúdo antes de cada parágrafo */
+p::before {
+    content: "Nota: ";
+    font-weight: bold;      
+}</code></pre>
+        <p>
+          Este código adiciona a palavra "Nota: " antes de cada parágrafo,
+          estilizada em negrito.
+        </p>
+        <h2>Lista de Seletores</h2>
+        <ul>
+          <li>Seletores de Atributo</li>
+          <li>Seletores de Pseudo-Classe</li>
+          <li>Seletores de Pseudo-Elemento</li>
+        </ul>
+        <p><a href="css/style.css">Clique aqui para ver o CSS</a></p>
+      </section>
+    </main>
+    <footer>Copyright © 2026. Todos os direitos reservados.</footer>
+  </body>
+</html>
