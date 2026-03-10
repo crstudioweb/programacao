@@ -1,1 +1,94 @@
 @charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #9a33a6;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: #9a33a6;
+  font-size: 2em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+  margin: 20px auto;
+}
+
+ul li {
+  float: left;
+
+  background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+  display: block;
+  padding: 0 2em;
+  line-height: 3em;
+  text-decoration: none;
+  color: #9a33a6;
+  font-size: 1.1em;
+  background: url(../imagens/aba-esquerda.png) no-repeat top left;
+}
+ul a:hover {
+  color: #894a1f;
+  background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+p {
+  width: 720px;
+  margin: 20px auto;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  clear: both;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #9a33a6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d678e0;
+}
+
+footer {
+  background-color: #9a33a6;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: rgb(235, 153, 1);
+  text-decoration: none;
+}
