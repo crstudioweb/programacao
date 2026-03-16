@@ -2,36 +2,43 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f2f2f2;
+  background: #a1a1a1;
 }
 
 h1 {
   text-align: center;
+  margin-top: 50px;
 }
 
 #container {
-  width: 720px;
+  width: 80%;
   margin: 0 auto;
   background: #fff;
 }
 
 #marca {
-  font-size: 1.5em;
+  font-size: 1.6em;
   height: 100px;
-  background: #9e9e9e;
+  background: #5e5e5e;
+  color: #fff;
   text-align: center;
   line-height: 100px;
 }
 #conteudo {
-  width: 520px;
+  width: 70%;
   float: right;
+}
+
+#conteudo h2 {
+  text-align: center;
+  padding-top: 20px;
 }
 #conteudo p {
   padding: 20px;
-  text-align: justify;
+  text-align: center;
 }
 #navegacao {
-  width: 180px;
+  width: 30%;
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -44,6 +51,7 @@ h1 {
   margin: 0;
 }
 #navegacao ul li {
+  font-size: 1.2em;
   padding: 10px;
   text-decoration: none;
   text-align: center;
@@ -59,8 +67,8 @@ h1 {
 }
 #rodape {
   clear: both;
-  background: #c4c4c4;
-  padding: 5px;
-  color: #1a1a1a;
+  background: #5e5e5e;
+  padding: 15px;
+  color: #fff;
   text-align: center;
 }
